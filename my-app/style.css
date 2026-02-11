@@ -1,0 +1,150 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #8b6cbe;
+  color: #1e293b;
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.catalogo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #0f172a;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+.formulario-produto {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 40px;
+}
+
+.formulario-produto h2 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+}
+
+.formulario-produto div {
+  margin-bottom: 16px;
+}
+
+.formulario-produto label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.formulario-produto input, .formulario-produto textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario-produto input:focus, .formulario-produto textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.formulario-produto button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.formulario-produto button:hover {
+  background-color: #4f46e5;
+}
+
+.lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.card-produto {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-produto:hover {
+  transform: translateY(-18px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #6366f1;
+}
+
+.card-produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background-color: #f1f5f9;
+}
+
+.card-produto h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.card-produto p {
+  color: #64748b;
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-produto strong {
+  color: #6366f1;
+  font-size: 1.25rem;
+  display: block;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-weight: 600;
+  color: #03385b;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 40px 0;
+}
